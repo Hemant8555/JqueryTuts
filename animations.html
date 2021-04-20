@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h1>DIFFERENT ANIMATION METHODS</h1>
+ <ul>
+  <li>Hide</li>
+  <li>Show</li>
+  <li>Toggle</li>
+  <li>Fade_in</li>
+  <li>Fade_out</li>
+  <li>Toggle</li>
+  <li>Slide_up</li>
+  <li>Slide_down</li>
+  <li>Toggle</li>
+ </ul>
+ <div>
+  <p style="border: 2px solid black;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla in, architecto porro provident natus deserunt ullam sequi id sit vel molestiae reprehenderit adipisci amet velit nemo ex, repellat, hic labore.</p>
+
+  <button id="btn1">Hide</button>
+  <button id="btn2">Show</button>
+  <button id="btn3">Toggle</button>
+ </div>
+</body>
+
+<script src="jquery-3.6.0.js"></script>
+<script>
+ $(document).ready(function(){
+  $('#btn1').click(function(){
+   $('p').hide('slow');
+  });
+  $('#btn2').click(function(){
+   $('p').show('fast');
+  });
+  $('#btn3').click(function(){
+   $('p').toggle(2000);
+  });
+  /*$('#btn3').click(function(){
+   $('p').toggle(2000,function(){
+    console.log('done')
+   });
+  });*/
+  
+ });
+</script>
+</html>
