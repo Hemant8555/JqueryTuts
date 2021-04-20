@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <script src="jquery-3.6.0.js"></script>
+  <body>
+    <h1>SET VALUE ON PAGE</h1>
+    <div>
+      <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, vel.
+      </p>
+      <button id="bchange">Change paragraph</button>
+      <button id="h3change">Change Heading</button>
+      <h3 id="heading3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore,
+        totam.
+      </h3>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#bchange").click(function () {
+        $("#p1").text("Hello buddy");
+      });
+      $("#h3change").click(function () {
+        $("body").attr("class", "red");
+      });
+    });
+  </script>
+</html>

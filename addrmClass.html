@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script src="jquery-3.6.0.js"></script>
+ <style>
+  .red{
+   background-color: red;
+  }
+ </style>
+</head>
+<body>
+ <h1>ADD OR REMOVE CLASS</h1>
+<div>
+ <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum.</p>
+ <button id="sbutton1">Remove class</button>
+ <button id="sbutton2">Add class</button>
+ <button id="sbutton3">Toggle class</button>
+</div>
+</body>
+<script>
+ $(document).ready(function(){
+  $('#sbutton1').click(function(){
+   $('#p1').removeClass("red");
+  });
+  $('#sbutton2').click(function(){
+   $('#p1').addClass("red");
+  });
+  $('#sbutton3').click(function(){
+   $('#p1').toggleClass("red");
+  });
+ });
+</script>
+</html>

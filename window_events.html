@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+
+
+<body>
+
+
+ <h1>WINDOW EVENTS</h1>
+ <ul>
+  <li>Scroll</li>
+  <li>Resize</li>
+  <li>Load-removed</li>
+ </ul>
+
+ <div>
+  <p style="max-width: 300px;max-height:200px;overflow:auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, nobis! Id rerum animi, dolorem non sapiente asperiores? Quo blanditiis sit similique hic alias vel voluptates, commodi pariatur! Earum temporibus voluptate eveniet et natus? Esse recusandae ea nostrum ad voluptates odio, laborum quod sint necessitatibus ut optio. Fuga officiis, similique nulla aliquam quidem nemo laboriosam obcaecati nam dolorum ipsam accusamus magni vel, quae provident cum? Consequuntur, mollitia molestiae? Consequatur quidem vero iusto accusantium id, odio quisquam labore voluptas excepturi cumque iure animi suscipit eius quo tempore minima et veniam commodi recusandae. Unde, repudiandae magni praesentium ab odit nihil esse maiores vel ea. Id repellendus non enim quisquam soluta laboriosam, veritatis quia. Quam voluptas nam blanditiis vero similique accusantium tempore temporibus, dolore error dicta possimus assumenda dolorum veniam voluptatum officia commodi non quae ad exercitationem porro ab et minima voluptates. Blanditiis vero ullam voluptates atque iusto deleniti distinctio commodi similique, rem accusamus doloremque. Iusto, voluptate. Aliquam deleniti eligendi temporibus eveniet illum nisi optio voluptas esse est. Harum delectus minus illo assumenda expedita excepturi explicabo sunt commodi eveniet corrupti illum quibusdam, nesciunt, maxime laborum eaque obcaecati nulla suscipit veritatis repellat, natus tenetur animi itaque distinctio. Nemo unde reiciendis, error aperiam molestiae, temporibus molestias vero magnam deleniti sit corrupti id ea animi cupiditate illum? Unde repellat laboriosam reprehenderit sunt enim iste, eius asperiores repudiandae debitis quis ea et accusantium aliquid veniam? Molestias nulla suscipit obcaecati facilis placeat assumenda rerum consectetur maiores. Nesciunt optio beatae distinctio, sunt voluptate inventore amet sit nihil quas minima iusto enim sint sed fuga, ab, ut nemo blanditiis rerum eveniet itaque. Molestias expedita magnam eum obcaecati inventore provident quas nemo reiciendis similique nulla atque sint consectetur corrupti excepturi molestiae ex incidunt, ipsam iure assumenda? Soluta magni suscipit error ipsa beatae dolore iusto cupiditate. Eum hic quidem itaque? Nesciunt, placeat architecto.</p>
+ </div>
+</body>
+
+<script src="jquery-3.6.0.js"></script>
+
+<script>
+ $(document).ready(function(){
+  $('p').scroll(function(){
+   console.log('you scrolled window');
+   $('body').css('background-color','cyan');
+  });
+  $(window).resize(function(){
+   console.log('you resized window');
+   $('body').css('background-color','yellow');
+  });
+ });
+</script>
+</html>

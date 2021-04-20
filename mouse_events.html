@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h1 style="text-align: center;">BASICS 2 OF JQUERY</h1>
+ <div>
+  <p style="max-width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vitae optio tempore similique, vel pariatur. Quia sapiente ab necessitatibus. Asperiores sed cumque magnam dicta quae quia cupiditate provident distinctio veritatis!</p>
+
+  <p class="p2" style="max-width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam natus sapiente recusandae dolore illo expedita consequatur, sed itaque quidem, aliquid quos. Accusantium fuga facilis aliquam, architecto doloribus corporis suscipit!</p>
+ </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+ $(document).ready(function(){
+  $('p').click(function(){
+   $(this).css('background-color','red');
+  });
+  $('p').mouseleave(function(){
+   $(this).css('background-color','yellow');
+  });
+   $('p').dblclick(function(){
+   $(this).css('background-color','blue');
+  });
+  $('p').contextmenu(function(){
+   $(this).css('background-color','black');
+  });
+  $('p').mouseenter(function(){
+   $(this).css('background-color','purple'); 
+  });
+ });
+
+</script>
+</html>
