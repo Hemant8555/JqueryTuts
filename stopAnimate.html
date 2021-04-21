@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>ANIMATE METHOD</h1>
+    <div
+      id="box"
+      style="position: relative; border: 2px solid black; width: 200px"
+    >
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+        architecto!
+      </p>
+    </div>
+    <br />
+    <button id="btn">Animate</button>
+    <button id="btn2">Stop</button>
+  </body>
+  <script src="jquery-3.6.0.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#btn").click(function () {
+        $("#box").animate({left: "200px",},3000,function () {
+            console.log("Animation Done");
+          }
+        );
+        $('#btn2').click(function(){
+         $('#box').stop();
+         //.stop(true,true)
+         //first true is tp stop all animations else it will only stop first animation
+         //second true is to end the animation and skio it to the end.
+        });
+      });
+    });
+  </script>
+</html>
